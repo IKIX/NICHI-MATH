@@ -1,0 +1,87 @@
+body {
+    font-family: 'Share Tech', sans-serif;
+    background-color: wheat;
+}
+
+header {
+    height: 5em;
+    background-color: darkblue;
+}
+
+header h1 {
+    float: left;
+    text-indent: 1em;
+    color: wheat;
+}
+
+#head {
+    text-decoration: none;
+    color: wheat;
+    transition: font-size 1s;
+}
+
+#head:hover {
+    font-size: 28pt;
+    transition: font-size 1s;
+}
+
+.grid-item {
+    padding: 1em;
+    width: 8em;
+    margin: .5em;
+    font-size: 16pt;
+    border-radius: .1em;
+    border: .5px dotted black;
+    color: black;
+    text-shadow: 1px 1px .1px wheat;
+}
+
+.grid-item:nth-child(5n+1) {
+    background-color: lightblue;
+}
+
+.grid-item:nth-child(5n+2) {
+    background-color: paleturquoise;
+}
+
+.grid-item:nth-child(5n+3) {
+    background-color: lightsteelblue;
+}
+
+.grid-item:nth-child(5n+4) {
+    background-color: lightcyan;
+}
+
+.grid-item:nth-child(5n) {
+    background-color: lightskyblue;
+}
+
+.grid-item:hover {
+    background-color: aliceblue;
+    transition: background-color 0.5s;
+}
+
+footer {
+    height: 7em;
+    background-color: darkblue;
+    color: wheat;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 1em;
+}
+
+@media screen and (max-width:625px){
+    nav li a {
+        transition: color .1s, padding .1s, background-color .1s;
+    }
+    
+    nav li a:hover {
+        transition: color .1s, padding .1s, background-color .1s;    
+    }
+    
+    footer {
+        height: 21em;
+    }
+}
