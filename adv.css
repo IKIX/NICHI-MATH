@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: -1.5em 0 0 0;
+    padding: 0;
+    max-width: 100%;
+    background-color: whitesmoke;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#scl {
+    background-color: azure;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#scl li {
+    float: left;
+    margin-right: 4px;
+}
+
+#scl iframe {
+    margin: 0 !important;
+}
+
+#tur {
+    background-color: darkslateblue;
+}
+
+#dsc {
+    background-color: tomato;
+}
+
+#jso {
+    background-color: darkgoldenrod;
+}
+
+#plg {
+    background-color: darkcyan;
+}
+
+#ftr {
+    background-color: forestgreen;
+}
+
+#mvi {
+    background-color: #180614;
+}
+
+#lds {
+    background-color: #f08300;
+}
+
+#wmb {
+    background-color: #da8d93;
+}
+
+#pgt {
+    background-color: #4e67b0;
+}
+
+#pga {
+    background-color: silver;
+}
+
+#agp {
+    background-color: gold;
+}
+
+div {
+    z-index: 5;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p a {
+    color: darkgoldenrod;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 35em;
+}
+
+nav h5 {
+    color: white;
+    text-align: right;
+}
+
+header h1 {
+    background-color: tan;
+    color: white;
+    font-size: 54pt;
+    font-family: Arial;
+    margin: 0;
+}
+
+h2 {
+    background-color: forestgreen;
+    color: white;
+    margin: 0;
+}
+
+h3 {
+    text-indent: 1em;
+}
+
+article p,
+article h3 {
+    max-width: 35em;
+    margin: 1em auto;
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+    z-index: 100;
+}
+
+hr {
+    color: forestgreen;
+    margin: 0;
+}
+
+space {
+    display: block;
+    height: 2em;
+}
+
+p sp {
+    display: block;
+    text-align: center;
+}
+
+em {
+    font-size: 120%;
+}
+
+#pre {
+    display: inline;
+    float: left;
+}
+
+#nex {
+    display: inline;
+    float: right;
+}
+
+a#vs,
+a#xt {
+    color: black;
+    font-size: 11pt;
+}
+
+#pre:hover,
+#nex:hover {
+    color: tan;
+}
+
+address {
+    float: right;
+}
+
+@media screen and (max-width: 590px) {
+    header h1 {
+        font-size: 42pt;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    p {
+        margin: 1em .25em;
+    }
+
+    #d {
+        width: 100vw;
+        height: 40vw;
+    }
+}

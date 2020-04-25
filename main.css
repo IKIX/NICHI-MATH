@@ -53,6 +53,7 @@ nav li a:hover {
 
 section {
     clear: both;
+    padding: 1em;
 }
 
 section h1 {
@@ -103,14 +104,12 @@ aside {
 }
 
 footer {
-    height: 7em;
+    height: auto;
     background-color: darkblue;
     color: wheat;
     text-align: center;
-}
-
-footer p {
-    padding-top: 1em;
+    padding: 15px;
+    bottom: 0;
 }
 
 nav#ftnv a {

@@ -1,66 +1,226 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta lang="ja">
-        <meta name="keywords" content="nanyaka, webdev, wbdv">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="NICHI MATH">
-        <title>
-            HOME - NICHI MATH
-        </title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="masonry.css">
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-        <script>
-            $(function(){
-                $('.grid').masonry({
-                    itemSelector: '.grid-item',
-                    columnWidth: 30
-                });
-                $("li a").click(function(){
-                    var url = this.href;
-                    var parts = url.split("#");
-                    var target = parts[1];
-                    var target_offset = $("#"+target).offset();
-                    var target_top = target_offset.top;
-                    $('html, body').animate({
-                        scrollTop:target_top
-                    }, 800);
-                });
-                $("li a").bind('touchstart', function(){
-                    var url = this.href;
-                    var parts = url.split("#");
-                    var target = parts[1];
-                    var target_offset = $("#"+target).offset();
-                    var target_top = target_offset.top;
-                    $('html, body').animate({
-                        scrollTop:target_top
-                    }, 1200);
-                });
-                $("span").bind({
-                    touchstart: function(){
-                        $(this).removeClass().addClass("touchstart");
-                    }
-                });
-                $("span").bind({
-                    touchend: function(){
-                        $(this).removeClass().addClass("touchend");
-                    }
-                });
+
+<head>
+    <meta charset="utf-8">
+    <meta lang="ja">
+    <meta name="keywords" content="nanyaka, webdev, wbdv">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="NICHI MATH">
+    <meta name="theme-color" content="wheat">
+    <title>
+        HOME - NICHI MATH
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="masonry.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        $(function() {
+            $('.grid').masonry({
+                itemSelector: '.grid-item',
+                columnWidth: 30
             });
-        </script>
-    </head>
-    <body>
-        <header>
-            <h1>
-                <a id="head" href="#">NICHI MATH</a>
-            </h1>
-        </header>
-        <nav id="hdnv">
+            $("li a").click(function() {
+                var url = this.href;
+                var parts = url.split("#");
+                var target = parts[1];
+                var target_offset = $("#" + target).offset();
+                var target_top = target_offset.top;
+                $('html, body').animate({
+                    scrollTop: target_top
+                }, 800);
+            });
+            $("li a").bind('touchstart', function() {
+                var url = this.href;
+                var parts = url.split("#");
+                var target = parts[1];
+                var target_offset = $("#" + target).offset();
+                var target_top = target_offset.top;
+                $('html, body').animate({
+                    scrollTop: target_top
+                }, 1200);
+            });
+            $("span").bind({
+                touchstart: function() {
+                    $(this).removeClass().addClass("touchstart");
+                }
+            });
+            $("span").bind({
+                touchend: function() {
+                    $(this).removeClass().addClass("touchend");
+                }
+            });
+        });
+
+    </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152801046-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152801046-1');
+</script>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a id="head" href="#">NICHI MATH</a>
+        </h1>
+    </header>
+    <nav id="hdnv">
+        <ul>
+            <li>
+                <a href="#actv">ACTIVITY</a>
+            </li>
+            <li>
+                <a href="#bckg">BACKGROUND</a>
+            </li>
+            <li>
+                <a href="#prfm">PERFORMANCES</a>
+            </li>
+            <li>
+                <a href="#ntrs">INTERESTS</a>
+            </li>
+            <li>
+                <a href="#mprs">IMPRESSION</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="actv">
+        <h1>ACTIVITY</h1>
+        <article>
+            <a href="mushamusha.html">
+                <p>2019-12 AI Models with Polygon Graph</p>
+            </a>
+        </article>
+        <article>
+            <a href="gatsugatsu.html">
+                <p>2019-12 Physics on Aging and "Gathering"</p>
+            </a>
+        </article>
+        <article>
+            <a href="pakupaku.html">
+                <p>2018-12 Probability the God Plays Dice is Zero</p>
+            </a>
+        </article>
+        <article>
+            <a href="bakubaku.html">
+                <p>2018-12 Membrane and Origin of the World</p>
+            </a>
+        </article>
+        <article>
+            <a href="pechakucha.html">
+                <p>2017-12 Long Growth Strategy of Brain</p>
+            </a>
+        </article>
+        <article>
+            <a href="mogumogu.html">
+                <p>2017-12 Between Multiverse and Inflation</p>
+            </a>
+        </article>
+        <article>
+            <a href="belabela.html">
+                <p>2016-12 Leap Graph and Probability</p>
+            </a>
+        </article>
+        <article>
+            <a href="perapera.html">
+                <p>2016-12 Polygon Graph and Employment</p>
+            </a>
+        </article>
+        <article>
+            <a href="nyamunyamu.html">
+                <p>2015-12 Physical Basis on Brain</p>
+            </a>
+        </article>
+        <article>
+            <a href="gonyogonyo.html">
+                <p>2015-12 Turing's Wave Function</p>
+            </a>
+        </article>
+    </section>
+    <section id="bckg">
+        <h1>BACKGROUND</h1>
+        <article>
+            <p>2012 Master of Science</p>
+            <p>2010 Bachelor of Library and Information Science</p>
+            <p>2004 Prepper of Artistic Architecture</p>
+        </article>
+    </section>
+    <section id="prfm">
+        <h1>PERFORMANCES</h1>
+        <article>
+            <div class="grid">
+                <div class="grid-item">Physics on Holes and Tubes</div>
+                <div class="grid-item">Complex Isometric Axis</div>
+                <div class="grid-item">Polygon Graph</div>
+                <div class="grid-item">Gatherity</div>
+                <div class="grid-item">Intelligence and Light</div>
+                <div class="grid-item">Stack, Queue, Poker</div>
+                <div class="grid-item">Centrome Antenna</div>
+                <div class="grid-item">Orbi Theory</div>
+                <div class="grid-item">Complex Value Space</div>
+                <div class="grid-item">Sieve of Menger</div>
+                <div class="grid-item">Leap Graph</div>
+                <div class="grid-item">Coding Surface</div>
+                <div class="grid-item">Nonedge Theory</div>
+                <div class="grid-item">Complex Probability</div>
+                <div class="grid-item">Paste Problem</div>
+                <div class="grid-item">3 Bit Robot Table</div>
+                <div class="grid-item">Leaf Number</div>
+                <div class="grid-item">Observable Decomposition</div>
+                <div class="grid-item">Pseudonumber log(-n)</div>
+                <div class="grid-item">Deterministic Quantum Theory</div>
+                <div class="grid-item">Helical Contraction</div>
+                <div class="grid-item">Potential Information</div>
+                <div class="grid-item">Informational Independence</div>
+                <div class="grid-item">Turing Wave</div>
+                <div class="grid-item">Economic Degradation</div>
+                <div class="grid-item">Gross Robot Product</div>
+                <div class="grid-item">Minimum Demands</div>
+                <div class="grid-item">Unstoppability</div>
+                <div class="grid-item">Dinericity</div>
+                <div class="grid-item">Time Revolution</div>
+                <div class="grid-item">Time Travel Principle</div>
+                <div class="grid-item">Structure Directivity</div>
+                <div class="grid-item">Action Potential as Contraction</div>
+                <div class="grid-item">Prism and Neural Transmittion</div>
+                <div class="grid-item">Poverty Theory of Glutamic Acid</div>
+                <div class="grid-item">Cell Growth Law</div>
+                <div class="grid-item">Stress Equation</div>
+                <div class="grid-item">Piketty Program</div>
+                <div class="grid-item">Minus Entropy and Library</div>
+                <div class="grid-item">Long Distance Strategy</div>
+                <div class="grid-item">Force of Surface and Information</div>
+                <div class="grid-item">Anisotropic Light</div>
+                <div class="grid-item">Detachment Theory</div>
+            </div>
+        </article>
+    </section>
+    <section id="ntrs">
+        <h1>INTERESTS</h1>
+        <article>
+            <p><span>Undiscovered Pure Forms</span></p>
+            <p><span>Surprising Novel Relations</span></p>
+            <p><span>Original Calculation Methods</span></p>
+        </article>
+    </section>
+    <section id="mprs">
+        <h1>IMPRESSION</h1>
+        <article>
+            <p>Willingness But Who Cares?</p>
+        </article>
+    </section>
+    <footer>
+        <p>&copy; NICHI MATH</p>
+        <nav id="ftnv">
             <ul>
                 <li>
                     <a href="#actv">ACTIVITY</a>
@@ -79,111 +239,7 @@
                 </li>
             </ul>
         </nav>
-        <section id="actv">
-            <h1>ACTIVITY</h1>
-            <article>
-                <a href="http://nchy.nanyaka.info/belabela.html"><p>2016-12 Leap Graph and Probability</p></a>
-            </article>
-            <article>
-                <a href="http://nchy.nanyaka.info/perapera.html"><p>2016-12 Polygon Graph and Employment</p></a>
-            </article>
-            <article>
-                <a href="http://nchy.nanyaka.info/nyamunyamu.html"><p>2015-12 Physical Basis on Brain</p></a>
-            </article>
-            <article>
-                <a href="http://nchy.nanyaka.info/gonyogonyo.html"><p>2015-12 Turing's Wave Function</p></a>
-            </article>
-        </section>
-        <section id="bckg">
-            <h1>BACKGROUND</h1>
-            <article>
-                <p>2012 Master of Science</p>
-                <p>2010 Bachelor of Library and Information Science</p>
-                <p>2004 Prepper of Artistic Architecture</p>
-            </article>
-        </section>
-        <section id="prfm">
-            <h1>PERFORMANCES</h1>
-            <article>
-                <div class="grid">
-            <div class="grid-item">Physics on Holes and Tubes</div>
-            <div class="grid-item">Complex Isometric Axis</div>
-            <div class="grid-item">Polygon Graph</div>
-            <div class="grid-item">Stack, Queue, Poker</div>
-            <div class="grid-item">Centrome Antenna</div>
-            <div class="grid-item">Orbi Theory</div>
-            <div class="grid-item">Complex Value Space</div>
-            <div class="grid-item">Sieve of Menger</div>
-            <div class="grid-item">Leap Graph</div>
-            <div class="grid-item">Coding Surface</div>
-            <div class="grid-item">Nonedge Theory</div>
-            <div class="grid-item">Complex Probability</div>
-            <div class="grid-item">Paste Problem</div>
-            <div class="grid-item">3 Bit Robot Table</div>
-            <div class="grid-item">Leaf Number</div>
-            <div class="grid-item">Observable Decomposition</div>
-            <div class="grid-item">Pseudonumber log(-n)</div>
-            <div class="grid-item">Deterministic Quantum Theory</div>
-            <div class="grid-item">Helical Contraction</div>
-            <div class="grid-item">Potential Information</div>
-            <div class="grid-item">Informational Independence</div>
-            <div class="grid-item">Turing Wave</div>
-            <div class="grid-item">Economic Degradation</div>
-            <div class="grid-item">Gross Robot Product</div>
-            <div class="grid-item">Minimum Demands</div>
-            <div class="grid-item">Unstoppability</div>
-            <div class="grid-item">Dinericity</div>
-            <div class="grid-item">Time Revolution</div>
-            <div class="grid-item">Time Travel Principle</div>
-            <div class="grid-item">Structure Directivity</div>
-            <div class="grid-item">Action Potential as Contraction</div>
-            <div class="grid-item">Prism and Neural Transmittion</div>
-            <div class="grid-item">Poverty Theory of Glutamic Acid</div>
-            <div class="grid-item">Cell Growth Law</div>
-            <div class="grid-item">Stress Equation</div>
-            <div class="grid-item">Minus Entropy and Library</div>
-            <div class="grid-item">Long Distance Strategy</div>
-            <div class="grid-item">Force of Surface and Information</div>
-            <div class="grid-item">Anisotropic Light</div>
-            <div class="grid-item">Detachment Theory</div>
-                </div>
-            </article>
-        </section>
-        <section id="ntrs">
-            <h1>INTERESTS</h1>
-            <article>
-                <p><span>Undiscovered Pure Forms</span></p>
-                    <p><span>Surprising Novel Relations</span></p>
-                    <p><span>Original Calculation Methods</span></p>
-            </article>
-        </section>
-        <section id="mprs">
-            <h1>IMPRESSION</h1>
-            <article>
-                <p>Willingness But Who Cares?</p>
-            </article>
-        </section>
-        <footer>
-            <p>&copy; 2017 NICHI MATH</p>
-            <nav id="ftnv">
-                <ul>
-                    <li>
-                        <a href="#actv">ACTIVITY</a>
-                    </li>
-                    <li>
-                        <a href="#bckg">BACKGROUND</a>
-                    </li>
-                    <li>
-                        <a href="#prfm">PERFORMANCES</a>
-                    </li>
-                    <li>
-                        <a href="#ntrs">INTERESTS</a>
-                    </li>
-                    <li>
-                        <a href="#mprs">IMPRESSION</a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
-    </body>
+    </footer>
+</body>
+
 </html>
