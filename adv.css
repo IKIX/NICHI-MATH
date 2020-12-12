@@ -200,7 +200,7 @@ flex {
     width: 45%;
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 520px) {
     header h1 {
         font-size: 42pt;
     }
