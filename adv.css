@@ -38,6 +38,14 @@ body {
     max-height: 24rem;
 }
 
+#zfd {
+    background-color: palegoldenrod;
+}
+
+#cmh {
+    background-color: thistle;
+}
+
 #rie {
     background-color: cornflowerblue;
 }
