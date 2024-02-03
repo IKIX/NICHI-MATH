@@ -10,6 +10,7 @@
 <script src ="adv.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152801046-1"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_SVG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,30 +36,30 @@ Your browser does not support html5.
 <h2><ruby><rb>リープグラフと複素確率</rb><rp>　</rp><rt>Leap Graph and Probability</rt></ruby></h2>
 <hr />
 <p>
-　リープグラフは，座標におけるグラフである．辺が半径の長さ，節は辺の始点の座標である．今年はうるう年であるが，リープとはリープイヤーのリープであり，うさぎがぴょんぴょん跳ねたときの跳ねあとに似ていることから名付けた．どこか台風の進路予想図やあめんぼの通った水面にも似ている．節V1(3,2)と節V2(6,5)があるとき，辺E1は√13，E2は3√2である．辺を半径とする円の周は辺に2πを掛けた値となり，辺を半径とする円の積は辺を二乗してπを掛けた値である．
+　リープグラフは，座標におけるグラフである．辺が半径の長さ，節は辺の始点の座標である．今年はうるう年であるが，リープとはリープイヤーのリープであり，うさぎがぴょんぴょん跳ねたときの跳ねあとに似ていることから名付けた．どこか台風の進路予想図やあめんぼの通った水面にも似ている．節<math><msub><mi>V</mi><mn>1</mn></msub><mi>(3,2)</mi></math>と節<math><msub><mi>V</mi><mn>2</mn></msub><mi>(6,5)</mi></math>があるとき，辺<math><msub><mi>E</mi><mn>1</mn></msub></math>は<math><msqrt><mn>13</mn></msqrt></math>，<math><msub><mi>E</mi><mn>2</mn></msub></math>は<math><mn>3</mn><msqrt><mn>2</mn></msqrt></math>である．辺を半径とする円の周は辺に<math><mn>2</mn><mi>π</mi></math>を掛けた値となり，辺を半径とする円の積は辺を二乗して<math><mi>π</mi></math>を掛けた値である．
 </p>
 <img src = "img/lpgrph.png" />
 <p>
-　リープグラフの売りは，複素平面で記述するとき発揮される．複素平面では確率を0から1に限らなくてよいことはご存知だろうか．一般に事象Eが存在する複素確率P(∃E)をr+Iiとする．rが0から1のときはコルモゴロフの意味での確率である．Iはシャノンの情報量である．
+　リープグラフの売りは，複素平面で記述するとき発揮される．複素平面では確率を0から1に限らなくてよいことはご存知だろうか．一般に事象<math><mi>E</mi></math>が存在する複素確率<math><mi>P(∃E)</mi></math>を<math><mi>r+Ii</mi></math>とする．<math><mi>r</mi></math>が0から1のときはコルモゴロフの意味での確率である．<math><mi>I</mi></math>はシャノンの情報量である．
 </p>
 <img src = "img/cmplxp.png" />
 <p>
-　ここで注意しておくが，シャノンの情報量も複素数にしてよい．Iは-logP(∃E)と表せるが，P(∃E)が複素数のとき，Iも複素数になる．-log(-x)=-log(-1)-log(x)であるから，実数-log(x)を実部に，純虚数-log(-1)を虚部にとる．なお，log(-1)は2πisと表せる．sは実部が1/2の複素数である．
+　ここで注意しておくが，シャノンの情報量も複素数にしてよい．<math><mi>I</mi></math>は<math><mo>-</mo><mi>logP(∃E)</mi></math>と表せるが，<math><mi>P(∃E)</mi></math>が複素数のとき，<math><mi>I</mi></math>も複素数になる．<math><mo>-</mo><mi>log(-x)</mi><mo>=</mo><mo>-</mo><mi>log(-1)</mi><mo>-</mo><mi>log(x)</mi></math>であるから，実数<math><mo>-</mo><mi>log(x)</mi></math>を実部に，純虚数<math><mo>-</mo><mi>log(-1)</mi></math>を虚部にとる．なお，<math><mi>log(-1)</mi></math>は<math><mi>2πis</mi></math>と表せる．<math><mi>s</mi></math>は実部が<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>の複素数である．
 </p>
 <img src = "img/ngtvlg.png" /><img src = "img/rmnnfm.png" />
 <p>
-　さて，一般に，情報を得ても確率は変わらない．情報は確率に影響を与えないのである．情報が影響を与えるのは，反対の事実を認識する場合である．事実Aが起きたのにもかかわらず，情報Xが確率1/2でAかBかを示すとき，事実Aを導かずにBと認識してしまう場合である．逆手に取れば，ある情報が一方的に受け取られており，事実はその逆であることを分かっていると，特に相場では大きな利益を得られることが多い．
+　さて，一般に，情報を得ても確率は変わらない．情報は確率に影響を与えないのである．情報が影響を与えるのは，反対の事実を認識する場合である．事実Aが起きたのにもかかわらず，情報Xが確率<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>でAかBかを示すとき，事実Aを導かずにBと認識してしまう場合である．逆手に取れば，ある情報が一方的に受け取られており，事実はその逆であることを分かっていると，特に相場では大きな利益を得られることが多い．
 </p>
 <p>
-　モンティ・ホール問題や3囚人問題において，情報を得る前後で確率は変わらないが，確率にまつわる何かが変わっている．それが確率の絶対値である．情報によって確率の絶対値は大きくなる．P=r+Iiと定義したのはそれを表現するためである．確率の絶対値は円周である．確率の絶対値を2πで割ると，円の半径hが求まる．つまり，|P|=2πhなのである．辺がh=|P|/2πのリープグラフになる．
+　モンティ・ホール問題や3囚人問題において，情報を得る前後で確率は変わらないが，確率にまつわる何かが変わっている．それが確率の絶対値である．情報によって確率の絶対値は大きくなる．<math><mi>P</mi><mo>=</mo><mi>r</mi><mo>+</mo><mi>Ii</mi></math>と定義したのはそれを表現するためである．確率の絶対値は円周である．確率の絶対値を<math><mi>2π</mi></math>で割ると，円の半径<math><mi>h</mi></math>が求まる．つまり，<math><mi>|P|</mi><mo>=</mo><mn>2</mn><mi>πh</mi></math>なのである．辺が<math><mi>h</mi><mo>=</mo><mfrac><mi>|P|</mi><mrow><mn>2</mn><mi>π</mi></mrow></mfrac></math>のリープグラフになる．
 </p>
 <img src = "img/crclcm.png" />
 <p>
-　円の中心zが(0,0)で半径がsの場合，|P|=2πsである．この中心zを(r,0)に延ばしてみたい．すると，P=r+2πsとなり，s=1/2 +tiだから，|P|=|r+π+2πti|である．特にt=±√(r-1)/2のとき，|P|=r+πである．
+　円の中心<math><mi>z</mi></math>が<math><mi>(0,0)</mi></math>で半径が<math><mi>s</mi></math>の場合，<math><mi>|P|</mi><mo>=</mo><mn>2</mn><mi>πs</mi></math>である．この中心<math><mi>z</mi></math>を<math><mi>(r,0)</mi></math>に延ばしてみたい．すると，<math><mi>P</mi><mo>=</mo><mi>r</mi><mo>+</mo><mn>2</mn><mi>πs</mi></math>となり，<math><mi>s</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn></mrow></mfrac><mo>+</mo><mi>ti</mi></math>だから，<math><mo>|</mo><mi>P</mi><mo>|</mo><mo>=</mo><mo>|</mo><mi>r</mi><mo>+</mo><mi>π</mi><mo>+</mo><mn>2</mn><mi>πti</mi><mo>|</mo></math>である．特に<math><mi>t</mi><mo>=</mo><mi>±</mi><msqrt><mfrac><mi>r-1</mi><mrow><mn>2</mn></mrow></mfrac></msqrt></math>のとき，<math><mi>|P|</mi><mo>=</mo><mi>r</mi><mo>+</mo><mi>π</mi></math>である．
 </p>
 <img src = "img/rmnncm.png" />
 <p>
-　辺がsで節が(r,0)のリープグラフは，グラフ理論を用いて計算できていく．すると，実数Rにおいてs=R+tiとするときに，ti=(P-r-2πR)/2πはR=1/2の場合にのみどうしてζ(s)=0となるのかについての手掛かりになる．情報をたくさん得るほどに確率の絶対値はいくらでも大きくなれる．けれども，いくら情報を集めても，これから起こすすべての事象を知り尽くしておられる神に匹敵できるはずがない．法則を知り事実を予想し続けることのほかに，未来を見通す方法はあるのだろうか．
+　辺が<math><mi>s</mi></math>で節が<math><mi>(r,0)</mi></math>のリープグラフは，グラフ理論を用いて計算できていく．すると，実数<math><mi>R</mi></math>において<math><mi>s</mi><mo>=</mo><mi>R</mi><mo>+</mo><mi>ti</mi></math>とするときに，<math><mi>ti</mi><mo>=</mo><mfrac><mrow><mi>P</mi><mo>-</mo><mi>r</mi><mo>-</mo><mn>2</mn><mi>πR</mi></mrow><mrow><mn>2</mn><mi>π</mi></mrow></mfrac></math>は<math><mi>R</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn></mrow></mfrac></math>の場合にのみどうして<math><mi>ζ(s)</mi><mo>=</mo><mn>0</mn></math>となるのかについての手掛かりになる．情報をたくさん得るほどに確率の絶対値はいくらでも大きくなれる．けれども，いくら情報を集めても，これから起こすすべての事象を知り尽くしておられる神に匹敵できるはずがない．法則を知り事実を予想し続けることのほかに，未来を見通す方法はあるのだろうか．
 </p>
 </article>
 <hr />

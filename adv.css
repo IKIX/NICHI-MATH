@@ -38,6 +38,14 @@ body {
     max-height: 24rem;
 }
 
+#plc {
+    background-color: olive;
+}
+
+#ccv {
+    background-color: darkseagreen;
+}
+
 #zfd {
     background-color: palegoldenrod;
 }

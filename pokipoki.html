@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone = no" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>価数による複素数の3次元的表現 | Advent Calendar 2023 | NICHI MATH |</title>
+    <meta property="og:image" content="https://nichi.potaro.org/img/dia_interval.png" />
+    <link rel="stylesheet" href="adv.css" />
+    <script src="adv.js"></script>
+    <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_SVG"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152801046-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-152801046-1');
+    </script>
+
+</head>
+
+<body>
+    <header id="ccv">
+        <nav>
+            <a href="https://adventar.org/calendars/9432">
+                <h5>|| ADVENT CALENDAR 2023 ||</h5>
+            </a>
+        </nav>
+        <canvas id="d" width="600" height="250">
+Your browser does not support html5.
+</canvas>
+        <h1>2023 12 07</h1>
+    </header>
+    <article>
+        <h2><ruby><rb>価数による複素数の3次元的表現</rb><rp>　</rp><rt>Complex Cube with Value Number</rt></ruby></h2>
+        <hr />
+        <p>
+            　複素数を3次元的に描画する空間は，3種類知られている．複素平面に実数軸（例えばゼータ関数の値<math><mi>ζ(s)</mi></math>）を直交させた空間，複素平面に位数軸（位数とは虚数と価数の積）を直交させた空間，そして複素平面に価数軸（価軸）を直交させた空間である．本稿では3つ目の価軸を直交させた空間について解説する．この空間を本稿では以下「価数空間」という言葉で表す．
+        </p>
+        <p>
+            　そもそも価軸を走る数とは，複素平面を何周するかを表す数のことで，有限周回の場合は三角関数（ラジアン）で，多価関数ではしばしば<math><mi>n</mi></math>で表される数である．2次元的な複素平面では描画表現できなかった数であり，複素平面で収まる複素数であっても，価軸の値がゼロにならない場合が多い．つまり，平面で収まっていた描画が価数空間では3次元的に広がった形をとる場合が多くある．
+        </p>
+        <p>
+            　価数空間を図で表すと以下のような空間になる．実軸<math><mi>R</mi></math>，虚軸<math><mi>I</mi></math>に対し，価軸<math><mi>V</mi></math>を直交させた空間である．
+        </p>
+        <img src="img/riv.png" alt="価数空間">
+        <p>
+            　ところで，複素数に価数はどのように含まれているのだろうか．ここで，<math><msup><mi>e</mi><mi>nπi</mi></msup></math>という複素数を考えたい．オイラーの公式で登場する<math><msup><mi>e</mi><mi>θi</mi></msup></math>の三角関数部分<math><mi>θ</mi></math>を<math><mi>nπ</mi></math>と置き換えた数である．
+        </p>
+        <p>
+            　この<math><mi>n</mi></math>は分解できるので，これを分解する．すると，<math><mi>n</mi><mo>=</mo><mi>DNV</mi></math>となる．先の複素数は，<math><msup><mi>e</mi><mi>nπi</mi></msup><mo>=</mo><msup><mi>e</mi><mi>DNVπi</mi></msup></math>となる．
+        </p>
+        <p>
+            　<math><mi>D</mi></math>は径（dia）と呼ぶことにし，一周する円の半径を表す．<math><mi>N</mi></math>は間隔（interval）とし，価軸における円同士の間隔を表す．いずれも<math><mi>D</mi></math>や<math><mi>N</mi></math>には整数だけでなく，実数や多項式なども入れることができ，その場合には楕円や不均質な間隔にもなる．
+        </p>
+        <img src="img/dia_interval.png" alt="径と間隔" width="300">
+        <p>
+            　このように<math><mi>n</mi></math>には径と間隔が含まれていたわけであるが，これらを除いて残った数<math><mi>V</mi></math>を価数と呼びたい．価数は虚数のような単位をとり，<math><mi>V</mi></math>あらため<math><mi>「v」</mi></math>を価数単位と呼びたい．
+        </p>
+        <p>
+            　なお，価数単位を考えるとき，<math><mi>log(-1)</mi></math>という数に惹かれる．<math><mi>log(-1)</mi><mo>=</mo></math><math><mi>(2n+1)πi</mi><mo>=</mo></math><math><mi>(2DNv+1)πi</mi></math>である．確かに，価数単位は<math><mi>log(-1)</mi></math>に似たものに違いないが，その正体がどんな値であるかという追究は，あまり意味を持たない．多価性を持つ純虚数として，あるいはそれを分解して得られた数として，価数単位の正体に関する追究に満足するべきである．もし追究したい者があれば，真数が負である対数について，価数を考慮した計算公式も含めて検討するべきである．困難だが不可能な問題ではないと思う．
+        </p>
+        <p>
+            　この価数単位を<math><mi>log(-1)</mi></math>と考えたい心理は，実数単位と虚数単位<math><msqrt><mi>-1</mi></msqrt></math>とを象徴的に考えあわせれば，たとえ数学の知識が少なくても複素空間に関する深い事実を直観できる気がしてくるので，その心理を抑えとどめるものではない．
+        </p>
+        <p>
+            　さて，実際に下図のように円が整数間隔で連なった複素数について，間隔の整数性を実数に拡大すると，らせん面になる．これは価数空間では基本的な描画例である．
+        </p>
+        <img src="img/helicalcontract.png" alt="らせん拡大">
+        <p>
+            　以上，複素数を3次元空間で描画する合理的な分解について考察してきた．ここで述べてきた分解が描画と一致するか検証するため，筆者は長い時間を要した．価軸が形成する空間の性質が，実数空間と若干異なっていると思われることは，虚軸が複素平面にもたらす性質の異質さと似ており，両者を考慮すると複素平面ないし価数空間に内在する数的性質をより厳密に調べ定めることができるかもしれない．
+        </p>
+        <p>
+            　径と間隔によって，例えばコーシーの定理が拡張を迫られるように，複素関数論を今一度見直すことができ，量子位相，流体力学，通信工学など，複素数を拡張する議論が直接役立つ分野に貢献する可能性がある．
+        </p>
+        <p>
+            　最後に，ゼータ関数による素数の公式の探索においても，本考察は驚くべき自由な解釈を提供する．もし興味を持たれた方は探究してみることをお勧めする．筆者は素数の公式についてこれ以上探究する気はなくしている．価数空間を実装しシミュレートできるプログラムやアプリが現時点で存在していないことと，現代において広く利用されている暗号の安全性が脅かされる懸念から，本稿の公開を躊躇してきたが，知の価値と数学利用の倫理を問う意味で公開することを決心した次第である．
+        </p>
+    </article>
+    <hr />
+    <footer id="ftr">
+        <p id="pre">&lt;PREVIOUS　<a id="vs" href="https://kigurox.hatenablog.com/entry/2023/12/04/185952">2の3乗根の作図について / kiguro_masanao さん</a></p>
+        <p id="nex"><a id="xt" href="https://math-topology.hatenablog.com/entry/pathplanning">n次元トーラス上のお掃除ロボット~経路計画と代数的トポロジー~ / ふくま@数学 さん</a>　NEXT&gt;</p>
+    </footer>
+    <script src="xmas.js"></script>
+</body>
+
+</html>
