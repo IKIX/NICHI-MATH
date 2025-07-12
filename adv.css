@@ -114,6 +114,18 @@ body {
     background-color: #800b23;
 }
 
+#itd {
+    background-color: #e7e4cc;
+}
+
+#gcs {
+    background-color: #dfdfdf;
+}
+
+#wht {
+    background-color: #fff;
+}
+
 div#snowparticle {
     width: 95%;
     margin: 0 auto;
@@ -229,6 +241,10 @@ address {
 
 flex {
     display: flex;
+}
+
+figcaption {
+    text-align: center;
 }
 
 #qimg {
